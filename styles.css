@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    background-color: #FFFAFA;
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zunip {
+    /* border: 1px solid red; */
+    box-shadow: 0px 0px 41px -18px #00000050;
+    border-radius: 5px;
+
+    position: relative;
+
+    width: 400px;
+    height: 600px;
+}
+
+.header {
+    background-color: #075ebd;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.header .perfil img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 4px solid #e54343;
+    border-radius: 50%;
+}
+
+.info {
+    width: 100%;
+}
+
+.info span {
+    color: white;
+    display: block;
+}
+
+.info .name {
+    font-weight: 700;
+    margin-bottom: 3px;
+    letter-spacing: 0.6px;
+}
+
+/* ========== CORPO DA PÁGINA ========== */
+.zunip main .chat {
+    background-color: #075ebd;
+    width: 100%;
+    /* border: 1px solid blue; */
+    padding: 12px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 0 0px 5px 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zunip .chat .emoji {
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.zunip .chat .emoji span,
+.zunip .chat button span {
+    color: #6796c9;
+    transition: 300ms;
+}
+
+.zunip .chat .emoji span:hover,
+.zunip .chat button span:hover {
+    color: white;
+}
+
+.zunip .chat textarea {
+    width: 100%;
+    max-height: 40px;
+
+    background-color: #eeeeee;
+
+    border: none;
+
+    padding: 8px 20px;
+
+    font-size: 16px;
+
+    font-family: 'Roboto', sans-serif;
+
+    color: #111111;
+
+    border: 1px solid #dad7d7;
+
+    border-radius: 10px;
+}
+
+.zunip .chat textarea:focus-within {
+    outline: none;
+}
+
+.zunip .chat .send-button {
+    background-color: #075ebd;
+    padding: 0;
+
+    border: none;
+
+    margin-left: 10px;
+
+    cursor: pointer;
+}
